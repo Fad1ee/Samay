@@ -7,7 +7,7 @@ header nav ul li a {
 }
 /* Categories Page Layout */
 body {
-    background: #848484;
+    background: #ebf041;
     overflow-y: scroll; /* enable vertical scrolling if needed */
     scrollbar-width: none; /* Firefox */
 }
@@ -119,5 +119,6 @@ margin-bottom: 35px;
         font-size: 1.1rem;
     }
 }
+
 
 
