@@ -1,0 +1,202 @@
+/* Reset basics */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body, html {
+    height: 100%;
+    overflow: auto; /* enable scrolling */
+    background: #848484;
+    color: #fff;
+
+    background-image: url("/Images/background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+/* Hide scrollbar but allow scrolling */
+body::-webkit-scrollbar {
+    width: 0px; /* hide scrollbar in Webkit browsers */
+    background: transparent;
+}
+body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;     /* Firefox */
+}
+
+/* Colors */
+:root {
+    --grey: #2c2c2c;
+    --gold: #FFD700;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+/* Contact Section */
+.contact {
+    padding: 120px 50px 50px 50px; /* space below fixed header */
+    margin-top: 60px;
+    min-height: 100vh;
+}
+
+/* Page title */
+.contact-title {
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--gold);
+    margin-bottom: 50px;
+}
+
+/* Wrapper for info + form */
+.contact-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+/* Glassmorphism cards */
+.contact-info,
+.contact-form {
+    flex: 1;
+    min-width: 300px;
+    background: rgba(44,44,44,0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-info:hover,
+.contact-form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+}
+
+/* Headings inside cards */
+.contact-info h2,
+.contact-form h2 {
+    color: var(--gold);
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+/* Contact info text */
+.contact-info p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+/* Form Inputs */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background: rgba(0,0,0,0.5);
+    color: var(--white);
+    transition: background 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    background: rgba(0,0,0,0.8);
+}
+
+/* Button */
+.contact-form button {
+    padding: 12px 35px;
+    font-size: 1rem;
+    background: var(--gold);
+    border: none;
+    border-radius: 30px;
+    color: var(--grey);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.contact-form button:hover {
+    background: var(--white);
+    color: var(--grey);
+    transform: scale(1.05);
+}
+
+/* Map Styling */
+
+.map {
+    margin-bottom: 50px;
+}
+
+.map iframe {
+    width: 100%;
+    height: 450px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    transition: transform 0.3s;
+}
+
+.map iframe:hover {
+    transform: scale(1.01);
+}
+
+/* Optional sliding classes (for JS animations) */
+.slide-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 0.8s ease-out;
+}
+
+.slide-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 0.8s ease-out;
+}
+
+.slide-up {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease-out;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+    .contact-wrapper {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .contact-title {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+}
+.checkout-img {
+    width: 515px;
+    height: 257px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+@media (max-width: 900px) {
+    .checkout-img {
+        width: 80%;       /* reduce width proportionally */
+        height: auto;     /* maintain aspect ratio */
+    }
+}

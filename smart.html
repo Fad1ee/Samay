@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAMAY Watch Store - Smartwatches</title>
+    <link rel="stylesheet" href="CSS/home.css">
+    <link rel="stylesheet" href="CSS/men.css">
+    <script src="JS/smart.js" defer></script>
+</head>
+<body>
+    <body style="background:#000000;">
+    <!-- Header -->
+    <header>
+        <div class="logo">SAMAY</div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-right">
+            <input type="text" id="searchBar"placeholder="Search..." class="search-bar">
+            <div class="view-cart"><a href="cart.html">View Cart</a></div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <div class="men-container">
+        <!-- Watch Grid -->
+        <div class="watch-grid">
+            <div class="watch-card" data-id="1">
+                <img src="Images/smart1.jpg" alt="Galaxy Smartwatch">
+                <h3>Galaxy Smartwatch</h3>
+                <p>PKR 15,000</p>
+                <button class="see-detail">See Details</button>
+            </div>
+            <div class="watch-card" data-id="2">
+                <img src="Images/smart2.jpg" alt="Apple Watch Series 9">
+                <h3>Apple Watch Series 9</h3>
+                <p>PKR 22,000</p>
+                <button class="see-detail">See Details</button>
+            </div>
+            <div class="watch-card" data-id="3">
+                <img src="Images/smart3.jpg" alt="Fitbit Charge 6">
+                <h3>Fitbit Charge 6</h3>
+                <p>PKR 12,500</p>
+                <button class="see-detail">See Details</button>
+            </div>
+            <div class="watch-card" data-id="4">
+                <img src="Images/smart4.jpg" alt="Garmin Venu">
+                <h3>Garmin Venu</h3>
+                <p>PKR 18,000</p>
+                <button class="see-detail">See Details</button>
+            </div>
+            <div class="watch-card" data-id="5">
+                <img src="Images/smart5.jpg" alt="Huawei Watch GT">
+                <h3>Huawei Watch GT</h3>
+                <p>PKR 14,500</p>
+                <button class="see-detail">See Details</button>
+            </div>
+            <div class="watch-card" data-id="6">
+                <img src="Images/smart6.jpg" alt="Amazfit GTS 4">
+                <h3>Amazfit GTS 4</h3>
+                <p>PKR 13,800</p>
+                <button class="see-detail">See Details</button>
+            </div>
+            <div class="watch-card" data-id="7">
+                <img src="Images/smart7.jpg" alt="Samsung Galaxy Watch 6">
+                <h3>Galaxy Watch 6</h3>
+                <p>PKR 20,000</p>
+                <button class="see-detail">See Details</button>
+            </div>
+            <div class="watch-card" data-id="8">
+                <img src="Images/smart8.jpg" alt="Fossil Gen 6">
+                <h3>Fossil Gen 6</h3>
+                <p>PKR 16,500</p>
+                <button class="see-detail">See Details</button>
+            </div>
+        </div>
+
+        <!-- Watch Detail Panel -->
+        <div class="watch-detail">
+            <h2><b>Watch Details</b></h2>
+            <img src="/Images/loading.png" alt="" id="detail-img">
+            <br>
+            <h3 id="detail-name"><b>Select a watch</b></h3>
+            <p id="detail-price"></p>
+            <div id="detail-desc"></div>
+            <button id="detail-add-btn">Add to Cart</button>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer id="footer">
+        <p>© 2025 SAMAY Watch Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>

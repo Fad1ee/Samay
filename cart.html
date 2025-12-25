@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - SAMAY Watch Store</title>
+    <link rel="stylesheet" href="CSS/home.css">
+    <link rel="stylesheet" href="CSS/cart.css">
+    <script src="JS/cart.js" defer></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">SAMAY</div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-right">
+            <input type="text" placeholder="Search..." class="search-bar">
+            <div class="view-cart"><a href="cart.html" style="color:#2c2c2c;text-decoration:none;">View Cart</a></div>
+        </div>
+    </header>
+
+    <!-- Spacer for fixed header -->
+    <div style="height:90px;"></div>
+
+    <!-- Main Cart Section -->
+    <main class="cart-container">
+        <!-- Left: Cart Items -->
+        <div class="cart-items">
+            <h2>Your Cart</h2>
+            <!-- Cart items will be dynamically injected here via JS -->
+            <div class="cart-total">
+                <p>Total: <span id="total-price">PKR 0</span></p>
+            </div>
+        </div>
+
+        <!-- Right: Checkout Form -->
+        <div class="checkout">
+            <h2>Checkout</h2>
+            <form id="checkoutForm">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Enter your full name" required>
+
+                <label for="address">Address</label>
+                <textarea id="address" placeholder="Enter your address" required></textarea>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" placeholder="Enter your phone number" required>
+
+                <button type="submit" class="checkout-btn">Place Order</button>
+                <div style="display:flex; justify-content:center; align-items:center; height:405px;">
+    <img src="/Images/checkout.png" alt="Classic Elegance" class="checkout-img">
+</div>
+
+
+
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 SAMAY Watch Store. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

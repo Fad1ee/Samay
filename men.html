@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men Watches - SAMAY</title>
+    <link rel="stylesheet" href="CSS/home.css">
+    <link rel="stylesheet" href="CSS/men.css">
+    <script src="JS/men.js" defer></script>
+</head>
+<body>
+<body style="background:#000000;">
+    <!-- Header -->
+    <header>
+        <div class="logo">SAMAY</div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-right">
+            <input type="text"id="searchBar" placeholder="Search..." class="search-bar">
+            <div class="view-cart"><a href="cart.html" style="color:#2c2c2c;text-decoration:none;">View Cart</a></div>
+        </div>
+    </header>
+
+    <div class="header-spacer"></div>
+
+    <main class="men-container">
+        <!-- Left: Watch Grid -->
+        <div class="watch-grid">
+            <!-- 8 Watches -->
+            <div class="watch-card" data-name="Classic Elegance" data-price="5000" data-desc="Elegant leather strap watch.\nPerfect for formal wear.\n1-year warranty.">
+                <img src="Images/men-1.jpg" alt="Classic Elegance">
+                <h3>Classic Elegance</h3>
+                <p>Price: 5000 PKR</p>
+                <button class="details-btn">See Details</button>
+            </div>
+            <div class="watch-card" data-name="Sporty Chrono" data-price="7000" data-desc="Sporty chronograph design.\nWater-resistant.\n2-year warranty.">
+                <img src="Images/men2.jpeg" alt="Sporty Chrono">
+                <h3>Sporty Chrono</h3>
+                <p>Price: 7000 PKR</p>
+                <button class="details-btn">See Details</button>
+            </div>
+            <div class="watch-card" data-name="Luxury Gold" data-price="12000" data-desc="Gold-tone automatic watch.\nLuxury finish.\n3-year warranty.">
+                <img src="Images/men3.jpg" alt="Luxury Gold">
+                <h3>Luxury Gold</h3>
+                <p>Price: 12000 PKR</p>
+                <button class="details-btn">See Details</button>
+            </div>
+            <div class="watch-card" data-name="Minimalist Black" data-price="4500" data-desc="Sleek minimalist black watch.\nFor casual and formal.\n1-year warranty.">
+                <img src="Images/men4.jpg" alt="Minimalist Black">
+                <h3>Minimalist Black</h3>
+                <p>Price: 4500 PKR</p>
+                <button class="details-btn">See Details</button>
+            </div>
+            <div class="watch-card" data-name="Adventure Explorer" data-price="8000" data-desc="Durable adventure watch.\nCompass included.\n2-year warranty.">
+                <img src="Images/men5.jpg" alt="Adventure Explorer">
+                <h3>Adventure Explorer</h3>
+                <p>Price: 8000 PKR</p>
+                <button class="details-btn">See Details</button>
+            </div>
+            <div class="watch-card" data-name="Modern Silver" data-price="6000" data-desc="Silver stainless steel watch.\nMinimalist design.\n1-year warranty.">
+                <img src="Images/men6.jpg" alt="Modern Silver">
+                <h3>Modern Silver</h3>
+                <p>Price: 6000 PKR</p>
+                <button class="details-btn">See Details</button>
+            </div>
+            <div class="watch-card" data-name="Vintage Leather" data-price="5500" data-desc="Retro leather strap watch.\nClassic dial.\n1-year warranty.">
+                <img src="Images/men7.jpg" alt="Vintage Leather">
+                <h3>Vintage Leather</h3>
+                <p>Price: 5500 PKR</p>
+                <button class="details-btn">See Details</button>
+            </div>
+            <div class="watch-card" data-name="Titanium Pro" data-price="10000" data-desc="Titanium case watch.\nProfessional style.\n3-year warranty.">
+                <img src="Images/men8.jpg" alt="Titanium Pro">
+                <h3>Titanium Pro</h3>
+                <p>Price: 10000 PKR</p>
+                <button class="details-btn">See Details</button>
+            </div>
+        </div>
+
+        <!-- Right: Watch Detail Panel -->
+        <div class="watch-detail">
+            <h2><b>Watch Details</b></h2>
+            <img src="/Images/loading.png" alt="" id="detail-img">
+            <br>
+            <h3 id="detail-name"><b>Select a watch</b></h3>
+            <p id="detail-price"></p>
+            <div id="detail-desc"></div>
+            <button id="detail-add-btn">Add to Cart</button>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 SAMAY Watch Store. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
