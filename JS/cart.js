@@ -90,3 +90,15 @@ document.addEventListener("DOMContentLoaded", () => {
     // Initial total calculation
     updateTotal();
 });
+
+const checkoutForm = document.getElementById("checkoutForm");
+const popup = document.getElementById("orderPopup");
+
+checkoutForm.addEventListener("submit", function (e) {
+    e.preventDefault(); // stop page refresh
+    popup.style.display = "flex";
+});
+
+function closePopup() {
+    popup.style.display = "none";
+}
