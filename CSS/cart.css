@@ -260,23 +260,6 @@ footer {
     max-height: 82vh;      /* fixed visual size */
     
 }
-
-/* Default image styles */
-.checkout-img {
-    width: 561px;
-    height: 339px;
-    object-fit: cover;
-    border-radius: 20px;
-}
-
-/* Media query for screens less than 900px */
-@media (max-width: 900px) {
-    .checkout-img {
-        margin-bottom: 42px;
-        width: 80%;       /* reduce width proportionally */
-        height: auto;     /* maintain aspect ratio */
-    }
-}
 @media (max-width: 900px) {
     footer {
         position: fixed;
@@ -285,6 +268,7 @@ footer {
         z-index: 1000;
     }
 }
+
 
 
 
