@@ -253,7 +253,7 @@ body {
 
 /* Footer behavior */
 footer {
-    position: static;    /* override absolute footer */
+    position: fixed;    /* override absolute footer */
     margin-top: auto;
 }
 .checkout {
@@ -285,6 +285,7 @@ footer {
         z-index: 1000;
     }
 }
+
 
 
 
